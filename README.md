@@ -16,5 +16,13 @@
 - Se ejecutaron con el comando `mvn test` en la terminal.
 - Se revisaron los resultados y se corrigieron errores menores.
 
-## 5️⃣ Entrega en GitHub
+## 5️⃣ Errores Encontrados y Soluciones Aplicadas
+- **Error:** `mockMvc` no se inyectaba correctamente en la prueba de integración.
+  - **Solución:** Se agregó la anotación `@AutoConfigureMockMvc` en la clase de prueba.
+- **Error:** La prueba unitaria fallaba debido a diferencias en el mensaje esperado.
+  - **Solución:** Se revisó y ajustó el mensaje esperado en el test.
+- **Error:** Dependencias desactualizadas generaban errores al compilar.
+  - **Solución:** Se ejecutó `mvn clean install` para actualizar dependencias.
+
+## 6️⃣ Entrega en GitHub
 - El código se subió al repositorio en **GitHub**.
